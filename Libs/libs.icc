@@ -1,0 +1,7 @@
+option macros(global, "yes"), link(exportall, "yes")
+{
+   target "lib\\g_libs.lib"
+   {
+      source "src\\dirent.cpp"
+      source "dirent.h"
+   }}

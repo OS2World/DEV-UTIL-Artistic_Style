@@ -1,0 +1,14 @@
+option  link(pmtype, vio), macros(global, "yes")
+{
+   target "test.exe"
+   {
+      source "src\\dirent.cpp"
+
+
+      source "c:\\os2tk45\\h\\libc\\errno.h"
+      source "include\\os2add.h"
+
+      source "src\\test.cpp"
+      source "include\\dirent.h"
+   }
+}
