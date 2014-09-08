@@ -1,0 +1,21 @@
+option  link(pmtype, vio), link(debug, "yes")
+{
+    target "src\\astyle.exe"
+    {
+        source "D:\\Projects\\VACPP\\Libs\\Lib\\g_libs.lib"
+        source "dirent.h"
+       option macros(global,yes)
+        {
+            source "C:\\OS2TK45\\h\\libc\\errno.h"
+            source "C:\\OS2TK45\\h\\libc\\assert.h"
+            source "os2add.h"
+        }
+        source "src\\ASBeautifier.cpp"
+        source "src\\ASEnhancer.cpp"
+        source "src\\ASFormatter.cpp"
+        source "src\\ASResource.cpp"
+        source "src\\astyle_main.cpp"
+        source "src\\astyle_main.h"
+    }
+
+}
